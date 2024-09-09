@@ -2,6 +2,32 @@
 
 [Original Repo](https://github.com/huszerldani/laravel-szunetnapok-api)
 
+The following config value must be added to config/app.php file: ```szunetnapok_api_key```.
+
+Like this:
+
+```php
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Name
+    |--------------------------------------------------------------------------
+    |
+    | This value is the name of your application. This value is used when the
+    | framework needs to place the application's name in a notification or
+    | any other location as required by the application or its packages.
+    |
+    */
+
+    'name' => env('APP_NAME', 'Laravel'),
+
+    ...
+
+    'szunetnapok_api_key' => env('SZUNETNAPOK_API_KEY'),
+];
+```
+
 # Laravel Munkaszüneti napok API
 
 Egyszerű munkaszüneti napok lekérdezése bármelyik évre, kiegészítve a plusz munkanapokkal.
