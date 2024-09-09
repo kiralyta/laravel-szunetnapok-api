@@ -1,6 +1,6 @@
 <?php
 
-namespace Pinasen\SzunetNapok;
+namespace Kiralyta\SzunetNapok;
 
 use Illuminate\Support\Facades\Http;
 

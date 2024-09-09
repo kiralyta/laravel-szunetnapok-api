@@ -1,17 +1,20 @@
 <?php
 
-namespace Pinasen\SzunetNapok;
+namespace Kiralyta\SzunetNapok;
 
 use Illuminate\Support\ServiceProvider;
 
-class SzunetNapokServiceProvider extends ServiceProvider {
-	public function boot() {
+class SzunetNapokServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
 
-	}
+    }
 
-	public function register() {
-		$this->app->singleton(SzunetNapok::class, function() {
-			return new SzunetNapok();
-		});
-	}
+    public function register()
+    {
+        $this->app->singleton(SzunetNapok::class, function () {
+            return new SzunetNapok();
+        });
+    }
 }

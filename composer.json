@@ -23,7 +23,7 @@
    },
    "autoload":{
       "psr-4":{
-         "Pinasen\\SzunetNapok\\":"src/"
+         "Kiralyta\\SzunetNapok\\":"src/"
       }
    },
    "extra":{
@@ -32,7 +32,7 @@
       },
       "laravel":{
          "providers":[
-            "Pinasen\\SzunetNapok\\SzunetNapokServiceProvider"
+            "Kiralyta\\SzunetNapok\\SzunetNapokServiceProvider"
          ]
       }
    }
