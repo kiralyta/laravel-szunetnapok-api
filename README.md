@@ -45,7 +45,7 @@ A használathoz szükséges API kulcsot igényelni:
 ## Telepítés
 
 ```bash
-composer require huszerldani/laravel-szunetnapok-api
+composer require kiralyta/laravel-szunetnapok-api
 ```
 <br/>
 Az API kulcsot a .env file-ban kell megadni:
