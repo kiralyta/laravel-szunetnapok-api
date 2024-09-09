@@ -4,20 +4,22 @@ namespace Pinasen\SzunetNapok;
 
 use Illuminate\Support\Facades\Http;
 
-class SzunetNapok {
-	public static function getYear($year = null) {
-		$apiKey = env('SZUNETNAPOK_API_KEY');
+class SzunetNapok
+{
+    public static function getYear($year = null)
+    {
+        $apiKey = config('app.szunetnapok_api_key');
 
-		if (!$apiKey) {
-			return response()->json(["error" => "Api kulcs megadása kötelező"]);
-		}
+        if (!$apiKey) {
+            return response()->json(["error" => "Api kulcs megadása kötelező"]);
+        }
 
-		if (!$year) {
-			$year = date("Y");
-		}
+        if (!$year) {
+            $year = date("Y");
+        }
 
-		$response = Http::get("https://szunetnapok.hu/api/$apiKey/$year/");
+        $response = Http::get("https://szunetnapok.hu/api/$apiKey/$year/");
 
-		return response()->json($response->json());
-	}
+        return response()->json($response->json());
+    }
 }
