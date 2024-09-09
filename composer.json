@@ -1,5 +1,5 @@
 {
-   "name":"huszerldani/laravel-szunetnapok-api",
+   "name":"kiralyta/laravel-szunetnapok-api",
    "description":"Laravel package a hivatalos magyar munkaszüneti napok lekéréséhez",
    "type":"library",
    "license":"MIT",
@@ -7,6 +7,10 @@
       {
          "name":"huszerldani",
          "email":"huszerldani@gmail.com"
+      },
+      {
+         "name":"kiralyta",
+         "email":"kiralyta@gmail.com"
       }
    ],
    "config":{
@@ -15,7 +19,7 @@
    "minimum-stability":"dev",
    "prefer-stable":true,
    "require":{
-      
+
    },
    "autoload":{
       "psr-4":{

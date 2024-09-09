@@ -1,3 +1,7 @@
+# Forked!
+
+[Original Repo](https://github.com/huszerldani/laravel-szunetnapok-api)
+
 # Laravel Munkaszüneti napok API
 
 Egyszerű munkaszüneti napok lekérdezése bármelyik évre, kiegészítve a plusz munkanapokkal.
